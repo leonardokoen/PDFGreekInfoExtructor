@@ -1,0 +1,9 @@
+version: '3'
+services:
+  jupyter:
+    image: greek-pdf-ocr
+    container_name: jupyter-notebook-server-container
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
