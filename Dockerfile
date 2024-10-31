@@ -3,7 +3,7 @@ FROM python:3.11-slim
 
 # Install system dependencies for Tesseract and other required libraries
 RUN apt-get update && \
-    apt-get install -y tesseract-ocr libtesseract-dev && \
+    apt-get install -y tesseract-ocr libtesseract-dev tesseract-ocr-ell && \
     apt-get install -y gcc g++ && \
     apt-get clean
 
